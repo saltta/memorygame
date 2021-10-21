@@ -33,8 +33,17 @@ class MemoryGame {
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
 
-            //if
+            if ( this.cardToCheck)
+                this.checkForCardMatch(card);
+            else
+                this.cardToCheck = card;
         }
+    }
+    checkForCardMatch(card) {
+
+    }
+    getCardType(card) {
+        return card.getElementsByClassName('fas')[1].classList[1];
     }
     startCountDown() {
         return setInterval(() => {
