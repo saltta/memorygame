@@ -140,10 +140,14 @@ body {
 
 @media (max-width: 650px) {
     .game {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(3, auto);
     }
     .game-stats-container {
         flex-direction: column;
         align-items: center;
+    }
+    .card {
+        height: 100px;
+        width: 100px;
     }
 }
