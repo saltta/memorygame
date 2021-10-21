@@ -1,8 +1,4 @@
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', ready());
-} else {
-    ready();
-}
+
 
 class MemoryGame {
     constructor(totalTime, cards) {
@@ -18,11 +14,12 @@ class MemoryGame {
         this.timeRemaining = this.totalTime;
         this.matchedCards = [];
         this.busy = true;
+        this.ticker.innerText = this.totalClicks;
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.totalClicks++;
-            this.ticker.innerText - this.totalClicks;
+            this.ticker.innerText = this.totalClicks;
         }
     }
     canFlipCard(card) {
@@ -34,7 +31,7 @@ class MemoryGame {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    // let game = new MemoryGame(60, cards);
+    let game = new MemoryGame(60, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
@@ -47,4 +44,10 @@ function ready() {
             game.flipCard(card);
         });
     });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', ready());
+} else {
+    ready();
 }
