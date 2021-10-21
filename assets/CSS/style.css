@@ -61,5 +61,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    backface-visibility: hidden;
 }
 
+.card-front {
+    transform: rotateX(180deg);
+}
+
+/* ENLARGE CARD IMAGE WHEN HOVER */
+
+.fas {
+    transition: 100ms;
+}
+
+.card-back:hover i {
+    transform: scale(1.2);
+    transition: transform 100ms ease-in-out;
+}
