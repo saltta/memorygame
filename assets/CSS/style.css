@@ -18,7 +18,7 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
     text-align: center;
-    font-size: 96px;
+    font-size: 12vw;
 }
 
 /* GAME STATUS BAR */
@@ -31,7 +31,7 @@ body {
 
 .game-stats {
     color: #0a8826;
-    font-size: 48px;
+    font-size: 6vw;
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -138,12 +138,6 @@ body {
 /* MEDIA QUERIES */
 
 @media (max-width: 650px) {
-    .page-head {
-        font-size: 60px;
-    }
-    .game-stats {
-        font-size: 30px;
-    }
     .game {
         grid-template-columns: repeat(2, auto);
     }
