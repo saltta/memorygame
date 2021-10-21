@@ -18,6 +18,14 @@ class MemoryGame {
             this.countdown = this.startCountdown();
             this.busy = false;
         }, 500);
+        this.hideCards();
+        this.timer.innerText = this.timeRemaining;
+        this.ticker.innerText = this.totalClicks;
+    }
+    hideCards() {
+        this.cardsArray.forEach(card => {
+            card.classList.remove('visible');
+        })
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
@@ -27,6 +35,9 @@ class MemoryGame {
 
             //if
         }
+    }
+    gameOver() {
+        
     }
 
     shuffleCards() {
