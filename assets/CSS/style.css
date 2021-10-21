@@ -47,9 +47,8 @@ body {
 
 .card {
     position: relative;
-    background-color: #000;
-    height: 175px;
-    width: 125px;
+    height: 150px;
+    width: 150px;
     color: #fff;
     font-size: 36px;
 }
@@ -62,6 +61,11 @@ body {
     justify-content: center;
     align-items: center;
     backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.card-back {
+    background-color: #000;
 }
 
 .card-front {
