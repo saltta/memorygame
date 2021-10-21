@@ -48,6 +48,10 @@ class MemoryGame {
         clearInterval(this.countDown);
         document.getElementById('game-over').classList.add('visible');
     }
+    victory() {
+        clearInterval(this.countDown);
+        document.getElementById('victory').classList.add('visible');
+    }
 
     shuffleCards() {
         for(let i = this.cardsArray.length - 1; i > 0; i--) {
