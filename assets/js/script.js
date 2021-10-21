@@ -40,6 +40,18 @@ class MemoryGame {
         }
     }
     checkForCardMatch(card) {
+        if (this.getCardType(card) === this.getCardType(this.cardToCheck))
+            this.cardMatch(card, this.cardToCheck);
+        else   
+            this.cardMismatch(card, this.cardToCheck);
+    }
+    cardMatch(card1, card2) {
+        this.matchedCards.push(card1);
+        this.matchedCards.push(card2);
+        if (this.matchedCards.length === this.cardsArray)
+            this.victory(;)
+    }
+    cardMismatch(card1, card2) {
 
     }
     getCardType(card) {
