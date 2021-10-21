@@ -10,3 +10,13 @@ body {
     margin: 0;
     background: radial-gradient(#bffaea, #bffacc);
 }
+
+/* HEADER */
+
+.page-head {
+    color: #097621;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    text-align: center;
+    font-size: 96px;
+}
