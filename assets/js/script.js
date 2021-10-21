@@ -52,7 +52,12 @@ class MemoryGame {
             this.victory(;)
     }
     cardMismatch(card1, card2) {
-
+        this.busy = true;
+        setTimeout(() => {
+            card1.classList.remove('visible');
+            card2.classList.remove('visible');
+            this.busy = false;
+        }, 1000);
     }
     getCardType(card) {
         return card.getElementsByClassName('fas')[1].classList[1];
