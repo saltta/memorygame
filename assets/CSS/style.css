@@ -28,3 +28,17 @@ body {
     font-size: 48px;
     font-family: 'Permanent Marker', cursive;
 }
+
+/* CARDS */
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 10px;
+}
+
+.card {
+    background-color: #000;
+    height: 175px;
+    width: 125px;
+}
