@@ -13,7 +13,11 @@ class MemoryGame {
         this.matchedCards = [];
         this.busy = true;
 
-        
+        setTimeout(() => {
+            this.shuffleCards();
+            this.countdown = this.startCountdown();
+            this.busy = false;
+        }, 500);
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
