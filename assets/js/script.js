@@ -19,8 +19,17 @@ class MemoryGame {
             this.totalClicks++;
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
+
+            //if
         }
     }
+
+    shuffleCards() {
+        for(let i = this.cardsArray.length - 1; i > 0; i--) {
+            let randIndex = Math.floor(Math.random() * (i+1));
+        }
+    }
+
     canFlipCard(card) {
         return true;
         //return !this.busy && !this.matchedCards.includes(card)&& card !== this.cardToCheck;
