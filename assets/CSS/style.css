@@ -20,3 +20,11 @@ body {
     text-align: center;
     font-size: 96px;
 }
+
+/* GAME STATUS BAR */
+
+.game-stats {
+    color: #0a8826;
+    font-size: 48px;
+    font-family: 'Permanent Marker', cursive;
+}
