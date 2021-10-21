@@ -4,6 +4,19 @@ if (document.readyState === 'loading') {
     ready();
 }
 
+class MemoryGame {
+    constructor(totalTime, cards) {
+        this.cardsArray = cards;
+        this.totalTime = totalTime;
+        this.timeRemaining = totalTime;
+        this.timer = document.getElementById('time');
+        this.ticker = document.getElementById('flips');
+    }
+    startGame() {
+        this.cardToCheck = null;
+    }
+}
+
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
