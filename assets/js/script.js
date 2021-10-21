@@ -15,7 +15,7 @@ class MemoryGame {
 
         setTimeout(() => {
             this.shuffleCards();
-            this.countdown = this.startCountdown();
+            this.countDown = this.startCountDown();
             this.busy = false;
         }, 500);
         this.hideCards();
@@ -36,8 +36,16 @@ class MemoryGame {
             //if
         }
     }
+    startCountDown() {
+        return setInterval(() => {
+            this.timeRemaining--;
+            this.timer.innerText = this.timeRemaining;
+            if(this.timeRemaining === 0)
+                this.gameOver();            
+        }, 1000);
+    }
     gameOver() {
-        
+        clearInterval(this.countDown);
     }
 
     shuffleCards() {
