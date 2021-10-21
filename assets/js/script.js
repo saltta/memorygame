@@ -46,6 +46,7 @@ class MemoryGame {
     }
     gameOver() {
         clearInterval(this.countDown);
+        document.getElementById('game-over').classList.add('visible');
     }
 
     shuffleCards() {
