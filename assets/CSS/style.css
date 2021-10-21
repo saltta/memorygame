@@ -23,6 +23,12 @@ body {
 
 /* GAME STATUS BAR */
 
+.game-stats-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
 .game-stats {
     color: #0a8826;
     font-size: 48px;
@@ -35,6 +41,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
 }
 
 .card {
