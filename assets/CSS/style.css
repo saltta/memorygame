@@ -65,7 +65,11 @@ body {
 }
 
 .card-back {
-    background-color: #000;
+    background-color: #af9bf7;
+}
+
+.card-back:hover {
+    cursor: pointer;
 }
 
 .card-front {
@@ -78,7 +82,7 @@ body {
     transition: 100ms;
 }
 
-.card-back:hover i {
+.card-back:hover .fas {
     transform: scale(1.2);
     transition: transform 100ms ease-in-out;
 }
