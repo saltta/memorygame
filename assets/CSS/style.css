@@ -53,6 +53,14 @@ body {
     font-size: 36px;
 }
 
+.card.visible .card-back {
+    transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+    transform: rotateY(0);
+}
+
 .card-face {
     position: absolute;
     width: 100%;
@@ -65,7 +73,7 @@ body {
 }
 
 .card-back {
-    background-color: #af9bf7;
+    background-color: #0a8826;
 }
 
 .card-back:hover {
@@ -73,7 +81,8 @@ body {
 }
 
 .card-front {
-    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    background-color: #af9bf7;
 }
 
 /* ENLARGE CARD IMAGE WHEN HOVER */
