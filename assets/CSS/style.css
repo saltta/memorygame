@@ -51,8 +51,13 @@ body {
     font-family: 'Permanent Marker', cursive;
 }
 
+.overlay-small {
+    font-size: 40px;
+}
+
 .overlay-text.visible {
     display: flex;
+    flex-direction: column;
     animation: overlay-grow 500ms forwards;
 }
 
