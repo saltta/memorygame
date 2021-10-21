@@ -20,7 +20,10 @@ class MemoryGame {
         this.busy = true;
     }
     flipCard(card) {
-
+        if(this.canFlipCard(card)) {
+            this.totalClicks++;
+            this.ticker.innerText - this.totalClicks;
+        }
     }
     canFlipCard(card) {
         return true;
@@ -31,7 +34,7 @@ class MemoryGame {
 function ready() {
     let overlays = Array.from(document.getElementsByClassName('overlay-text'));
     let cards = Array.from(document.getElementsByClassName('card'));
-    let game = new MemoryGame(60, cards);
+    // let game = new MemoryGame(60, cards);
 
     overlays.forEach(overlay => {
         overlay.addEventListener('click', () => {
