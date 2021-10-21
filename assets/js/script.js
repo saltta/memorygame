@@ -51,7 +51,7 @@ class MemoryGame {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
         if (this.matchedCards.length === this.cardsArray.length)
-            this.victory();
+            this.endGame('victory');
     }
     cardMismatch(card1, card2) {
         this.busy = true;
@@ -69,16 +69,13 @@ class MemoryGame {
             this.timeRemaining--;
             this.timer.innerText = this.timeRemaining;
             if(this.timeRemaining === 0)
-                this.gameOver();            
+                this.endGame('game-over');            
         }, 1000);
     }
-    gameOver() {
+
+    endGame(outcome) {
         clearInterval(this.countDown);
-        document.getElementById('game-over').classList.add('visible');
-    }
-    victory() {
-        clearInterval(this.countDown);
-        document.getElementById('victory').classList.add('visible');
+        document.getElementById(outcome).classList.add('visible');
     }
 
     shuffleCards() {
