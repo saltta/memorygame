@@ -18,7 +18,7 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
     text-align: center;
-    font-size: 12vw;
+    font-size: 5rem;
 }
 
 /* GAME STATUS BAR */
@@ -31,7 +31,7 @@ body {
 
 .game-stats {
     color: #0a8826;
-    font-size: 4vw;
+    font-size: 3rem;
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .overlay-small {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .overlay-text.visible {
@@ -88,7 +88,7 @@ body {
     height: 150px;
     width: 150px;
     color: #fff;
-    font-size: 36px;
+    font-size: 2.1rem;
 }
 
 .card.visible .card-back {
