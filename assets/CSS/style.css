@@ -43,6 +43,7 @@ body {
     grid-gap: 10px;
     margin: 50px;
     justify-content: center;
+    perspective: 500px;
 }
 
 .card {
@@ -70,6 +71,7 @@ body {
     align-items: center;
     backface-visibility: hidden;
     border-radius: 10px;
+    transition: transform 400ms ease-in-out;
 }
 
 .card-back {
@@ -85,7 +87,7 @@ body {
     background-color: #af9bf7;
 }
 
-/* ENLARGE CARD IMAGE WHEN HOVER */
+/* ENLARGE CARD BACK IMAGE WHEN HOVER */
 
 .fas {
     transition: 100ms;
