@@ -25,7 +25,7 @@ class MemoryGame {
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
-        })
+        });
     }
     flipCard(card) {
         if(this.canFlipCard(card)) {
