@@ -25,6 +25,7 @@ body {
 /* GAME STATUS BAR */
 
 .game-stats-container {
+    margin-top: -50px;
     grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
@@ -86,8 +87,8 @@ body {
 
 .card {
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     color: #fff;
     font-size: 2.1rem;
 }
