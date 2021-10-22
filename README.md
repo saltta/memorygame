@@ -115,6 +115,7 @@ The game was tested on Windows 10 and MacOS in Firefox and Chrome, as well as an
 - Web Dev Simplified - [How to Code a Card Matching Game](https://www.youtube.com/watch?v=28VfzEiJgy4&t=0s)
 - PortEXE - [How To Code A Card Game In Plain JavaScript - Spooky Halloween Edition](https://www.youtube.com/watch?v=3uuQ3g92oPQ)
 - Fisher-Yates Shuffle - https://en.wikipedia.org/wiki/Fisher-Yates_shuffle
+
 My shuffle code as explained by PortExe based on the Fisher-Yates Shuffle:
 
 ![Shuffle Code](assets/images/shuffle.png)
