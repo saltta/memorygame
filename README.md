@@ -55,8 +55,16 @@ This website was written using HTML5, CSS3 and JavaScript.
 I used the following validators to make sure there were no syntax errors in the project:
 
 - The W3C Markup Validation Service:
+
+![HTML Validator](assets/images/html.png)
+
 - The W3C CSS Validation Service:
-- JSHint:
+
+![CSS Validator](assets/images/css.png)
+
+- JSHint - assuming new JavaScript features(ES6):
+
+![JavaScript Code Analysis](assets/images/js.png)
 
 ## Lighthouse
 
