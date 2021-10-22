@@ -5,7 +5,7 @@ Every card when clicked will reveal a little food icon.
 The idea is to be quick and easy, the timer adds enough pressure for the game to be challenging yet enjoyable.
 Just match the cards within the time limit and you will have victory!
 
-[Click here to try it out](https://saltta.github.io/memorygame/)
+[Click here to try it out.](https://saltta.github.io/memorygame/)
 
 ![Responsive Mockup](assets/images/responsive.png)
 
@@ -61,3 +61,10 @@ This was fixed by adding this line of code:
 
 The game was tested on Windows 10 and MacOS in Firefox and Chrome, as well as an Adroid phone running a Chrome based browser, there were no bugs reported.
 
+## Deployment
+
+ The site was deployed to GitHub pages. The steps to deploy are as follows: 
+- In the GitHub repository, navigate to the Settings tab.
+- In the left sidebar click on Pages.
+- In the Source drop-down menu, select the Main branch.
+- Click Save.
