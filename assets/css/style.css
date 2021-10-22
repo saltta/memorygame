@@ -8,14 +8,14 @@ html {
 
 body {
     margin: 0;
-    background: radial-gradient(#fff , #ffff22);
+    background: radial-gradient(#bffaea, #bffacc);
     font-family: 'Permanent Marker', cursive;
 }
 
 /* HEADER */
 
 .page-head {
-    color: #ff0000;
+    color: #097621;
     font-weight: normal;
     text-align: center;
     font-size: 5rem;
@@ -32,7 +32,7 @@ body {
 }
 
 .game-stats {
-    color: #ff0000;
+    color: #0a8826;
     font-size: 3rem;
 }
 
@@ -48,7 +48,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    color: #ffff89;
+    color: #bffacc;
 }
 
 .overlay-small {
@@ -87,6 +87,7 @@ body {
     position: relative;
     height: 125px;
     width: 125px;
+    color: #fff;
     font-size: 2.1rem;
 }
 
@@ -111,8 +112,7 @@ body {
 }
 
 .card-back {
-    background-color: #ff0000;
-    color: #ffff00;
+    background-color: #0a8826;
 }
 
 .card-back:hover {
@@ -121,8 +121,7 @@ body {
 
 .card-front {
     transform: rotateY(180deg);
-    background-color: #ffff00;
-    color: #ff0000;
+    background-color: #af9bf7;
 }
 
 /* ENLARGE CARD BACK IMAGE WHEN HOVER */
@@ -147,8 +146,8 @@ footer {
     min-height: 40px;
     padding: 3px;
     text-align: center;
-    color: #ffff00;
-    background-color: #ff0000;
+    color: #bffacc;
+    background-color: #097621;
 }
 
 /* MEDIA QUERIES */
