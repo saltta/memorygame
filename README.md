@@ -15,7 +15,7 @@ Just match the cards within the time limit and you will have victory!
 
 The main idea for the game is to be a simple entertainment. Nowadays we have really intricate and complex stories and everything is made with the intention to keep the user engaged.
 
-This is a completely free-to-use game that is made to be quickly enjoyed and get the player's mind off of stress. No decisions to make, no path to follow, nothing but a little card game that is over in 45 seconds or less and can be played as many times as you want.
+This is a completely free-to-play game that is made to be quickly enjoyed and get the player's mind off of stress. No decisions to make, no path to follow, nothing but a little card game that is over in 45 seconds or less and can be played as many times as you want.
 
 ## Design Choices
 
