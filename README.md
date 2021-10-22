@@ -9,6 +9,53 @@ Just match the cards within the time limit and you will have victory!
 
 ![Responsive Mockup](assets/images/responsive.png)
 
+# User Experience (UX)
+
+## Objective
+
+The main idea for the game is to be a simple entertainment. Nowadays we have really intricate and complex stories and everything is made with the intention to keep the user engaged.
+
+This is a completely free-to-use game that is made to be quickly enjoyed and get the player's mind off of stress. No decisions to make, no path to follow, nothing but a little card game that is over in 45 seconds or less and can be played as many times as you want.
+
+## Design Choices
+
+The game was developed with simplicity at its core. which meant:
+
+- No pictures
+- Non-distracting color scheme
+- Simple illustrations
+- Fast to start
+- Fast to finish
+- Intuitive gameplay
+
+With these things in mind I composed the layout.
+
+### Color Scheme
+
+As the face of the page I decided on different shades of green, which is a calm yet warmer color.
+
+I selected tones that would contrast with each other and make the header and the stats very visible against the background.
+
+![Color Contrast](assets/images/contrast.png)
+
+For the front side of cards I chose a complementary color to make it very clear that the user was looking at the other side of the card.
+
+![Complimentary Color](assets/images/compliment.png)
+
+### Typography
+
+For the font I selected Permanent Marker from Google Fonts. I liked the handwritten aspect of it which was in line with the simplicity I had envisioned.
+
+![Permanent Marker Font](assets/images/marker.png)
+
+### Icons
+
+The little food icons were chosen for their uncomplicated design. Simply put, they are cute. They contribute to the lightheartedness of the experience. 
+
+They were sourced from Font Awesome.
+
+![Food Icons](assets/images/food.png)
+
 # Features
 
 This website was written using HTML5, CSS3 and JavaScript.
@@ -89,6 +136,14 @@ This was fixed by adding this line of code:
     <link rel="shortcut icon" href="favicon.ico" />
 
 The game was tested on Windows 10 and MacOS in Firefox and Chrome, as well as an Adroid phone running a Chrome based browser, there were no bugs reported.
+
+### Responsiveness
+
+The original layout had 16 cards in 4 columns. To avoid having to scroll sideways on phones, it was adjusted via media query for smaller screens to only 2 columns, which made the page very long and the experience on a phone was hindered.
+
+I made the cards smaller to be able to fit 3 columns on a mobile screen, but the 16 cards divided in 3 meant that 1 column had an extra card and didn't look appealing from a user's perspective.
+
+Ultimately I decided to reduce the number of cards to 12, as well as the time to play the game from 60 to 45 seconds. It ended up being a positive change because the gameplay became more dynamic and could now fit into a smaller screen without having to scroll too much to be able to play.
 
 # Deployment
 
