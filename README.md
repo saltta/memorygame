@@ -18,23 +18,35 @@ This website was written using HTML5, CSS3 and JavaScript.
 - The header shows the title of the game.
 - It is big and bold to draw attention to itself once the game is opened.
 
+![Header](assets/images/header.png)
+
 ## Game Stats
 
 - The stats sit below the header and above the interactive part of the game.
 - It displays how many seconds you have left to finish and how many cards you have flipped.
+
+![Game Status Bar](assets/images/stats.png)
 
 ## Cards
 
 - A total of 12 cards are displayed in 3 columns.
 - Their backs are facing up until clicked on and they rotate revealing a different image.
 
+![Card Deck](assets/images/game.png)
+
 ## Footer
 
 - The footer displays a quick instruction on what the objective is.
 
+![Footer](assets/images/footer.png)
+
 ## Overlays
 
 - Messages that prompt the player to start or restart the game.
+
+![Game Start](assets/images/start.png)
+![Victory](assets/images/victory.png)
+![Game Over](assets/images/over.png)
 
 # Testing
 
