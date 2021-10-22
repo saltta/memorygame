@@ -36,8 +36,11 @@ Just match the cards within the time limit and you will have victory!
 
 # Testing
 
+I used the following validators to make sure there were no syntax errors in the project:
 
-
+- The W3C Markup Validation Service
+- The W3C CSS Validation Service
+- JSHint
 
 
 
