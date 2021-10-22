@@ -7,3 +7,5 @@ Just match the cards within the time limit and you will have victory!
 
 [Click here to try it out](https://saltta.github.io/memorygame/)
 
+![Responsive Mockup](assets/images/responsive.png)
+
