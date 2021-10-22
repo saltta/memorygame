@@ -19,7 +19,7 @@ This is a completely free-to-play game that is made to be quickly enjoyed and ge
 
 ## Design Choices
 
-The game was developed with simplicity at its core. which meant:
+The game was developed with simplicity at its core. Which meant:
 
 - No pictures
 - Non-distracting color scheme
