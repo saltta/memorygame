@@ -1,4 +1,12 @@
+/**
+ * Creates and controls data for the game 
+ */
 class MemoryGame {
+    /**
+     * Sets the template for the game
+     * @param {number} totalTime - Total time to play
+     * @param {object} cards - Cards in the deck
+     */
     constructor(totalTime, cards) {
         this.cardsArray = cards;
         this.totalTime = totalTime;
@@ -6,6 +14,9 @@ class MemoryGame {
         this.timer = document.getElementById('time');
         this.ticker = document.getElementById('flips');
     }
+    /**
+     * Starts the game
+     */
     startGame() {
         this.cardToCheck = null;
         this.totalClicks = 0;
@@ -13,20 +24,26 @@ class MemoryGame {
         this.matchedCards = [];
         this.busy = true;
 
+        /**
+         * Delays the start of the game after you click for smoother experience
+         */
         setTimeout(() => {
             this.shuffleCards();
             this.countDown = this.startCountDown();
             this.busy = false;
         }, 500);
+        
         this.hideCards();
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
         });
     }
+
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.totalClicks++;
@@ -39,6 +56,7 @@ class MemoryGame {
                 this.cardToCheck = card;
         }
     }
+
     checkForCardMatch(card) {
         if (this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -47,12 +65,14 @@ class MemoryGame {
         
             this.cardToCheck = null;
     }
+
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
         if (this.matchedCards.length === this.cardsArray.length)
             this.endGame('victory');
     }
+
     cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
@@ -61,9 +81,11 @@ class MemoryGame {
             this.busy = false;
         }, 800);
     }
+
     getCardType(card) {
         return card.getElementsByClassName('fas')[1].classList[1];
     }
+
     startCountDown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -89,6 +111,7 @@ class MemoryGame {
     canFlipCard(card) {
         return !this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck;
     }
+
 }
 
 function ready() {
@@ -102,11 +125,13 @@ function ready() {
             game.startGame();
         });
     });
+
     cards.forEach(card => {
         card.addEventListener('click', () => {
             game.flipCard(card);
         });
     });
+    
 }
 
 ready();
