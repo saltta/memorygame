@@ -42,5 +42,9 @@ I used the following validators to make sure there were no syntax errors in the 
 - The W3C CSS Validation Service
 - JSHint
 
+I also checked the performance of the page using Chrome's Lighthouse
+
+- Mobile Results
+- Desktop Results
 
 
