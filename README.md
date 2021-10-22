@@ -71,7 +71,12 @@ I used the following validators to make sure there were no syntax errors in the 
 I also checked the performance of the page using Chrome's Lighthouse.
 
 - Mobile Results:
+
+![Lighthouse Mobile](assets/images/mobile.png)
+
 - Desktop Results:
+
+![Lighthouse Desktop](assets/images/desktop.jpg)
 
 ## Bugs
 
