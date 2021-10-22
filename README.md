@@ -9,17 +9,35 @@ Just match the cards within the time limit and you will have victory!
 
 ![Responsive Mockup](assets/images/responsive.png)
 
-## Features
+# Features
 
-### Header
+## Header
 
 - The header shows the title of the game
 - It is big and bold to draw attention to itself once the game is opened
 
-### Game Stats
+## Game Stats
 
 - The stats sit below the header and above the interactive part of the game
 - It displays how many seconds you have left to finish and how many cards you have flipped
+
+## Cards
+
+- A total of 12 cards are displayed in 3 columns
+- Their backs are facing up until clicked on and they rotate revealing a different image
+
+## Footer
+
+- The footer displays a quick instruction on what the objective is
+
+## Overlays
+
+- Messages that prompt the player to start or restart the game
+
+# Testing
+
+
+
 
 
 
