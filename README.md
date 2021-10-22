@@ -13,38 +13,51 @@ Just match the cards within the time limit and you will have victory!
 
 ## Header
 
-- The header shows the title of the game
-- It is big and bold to draw attention to itself once the game is opened
+- The header shows the title of the game.
+- It is big and bold to draw attention to itself once the game is opened.
 
 ## Game Stats
 
-- The stats sit below the header and above the interactive part of the game
-- It displays how many seconds you have left to finish and how many cards you have flipped
+- The stats sit below the header and above the interactive part of the game.
+- It displays how many seconds you have left to finish and how many cards you have flipped.
 
 ## Cards
 
-- A total of 12 cards are displayed in 3 columns
-- Their backs are facing up until clicked on and they rotate revealing a different image
+- A total of 12 cards are displayed in 3 columns.
+- Their backs are facing up until clicked on and they rotate revealing a different image.
 
 ## Footer
 
-- The footer displays a quick instruction on what the objective is
+- The footer displays a quick instruction on what the objective is.
 
 ## Overlays
 
-- Messages that prompt the player to start or restart the game
+- Messages that prompt the player to start or restart the game.
 
 # Testing
 
+## Validators
+
 I used the following validators to make sure there were no syntax errors in the project:
 
-- The W3C Markup Validation Service
-- The W3C CSS Validation Service
-- JSHint
+- The W3C Markup Validation Service:
+- The W3C CSS Validation Service:
+- JSHint:
 
-I also checked the performance of the page using Chrome's Lighthouse
+## Lighthouse
 
-- Mobile Results
-- Desktop Results
+I also checked the performance of the page using Chrome's Lighthouse.
 
+- Mobile Results:
+- Desktop Results:
+
+## Bugs
+
+After deploying via GitHub Pages I noticed my favicon was not being displayed in the deployed page although it worked on the test server.
+
+This was fixed by adding this line of code:
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+The game was tested on Windows 10 and MacOS in Firefox and Chrome, as well as an Adroid phone running a Chrome based browser, there were no bugs reported.
 
