@@ -32,7 +32,7 @@ With these things in mind I composed the layout.
 
 ### Color Scheme
 
-As the face of the page I decided on different shades of green, which is a calm yet warmer color.
+I decided on different shades of green, which is a calm yet warmer color.
 
 I selected tones that would contrast with each other and make the header and the stats very visible against the background.
 
